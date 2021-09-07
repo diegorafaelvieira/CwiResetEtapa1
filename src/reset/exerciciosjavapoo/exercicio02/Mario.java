@@ -1,4 +1,4 @@
-package reset.exerciciosjavapoo.aula02;
+package reset.exerciciosjavapoo.exercicio02;
 
 public class Mario {
 

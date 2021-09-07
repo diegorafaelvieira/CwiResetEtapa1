@@ -1,4 +1,4 @@
-package reset.exerciciosjavapoo.aula05;
+package reset.exerciciosjavapoo.exercicio05;
 
 public class Exercicio05 {
 

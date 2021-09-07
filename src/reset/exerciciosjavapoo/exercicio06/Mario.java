@@ -1,4 +1,4 @@
-package reset.exerciciosjavapoo.aula05;
+package reset.exerciciosjavapoo.exercicio06;
 
 public class Mario {
 
@@ -6,6 +6,9 @@ public class Mario {
     private int idade;
     private double altura;
     private int estamina;
+    private int quantidadeDeMoedas = 0;
+    private int quantidadeDeVidas = 1;
+
 
     //Construtores
     public Mario() {
@@ -71,7 +74,32 @@ public class Mario {
     }
 
     public void crescer() {
+
         this.altura = this.altura * 2;
+    }
+
+    public void revigorar() {
+        this.estamina = 100;
+    }
+
+    public void morrer() {
+        this.quantidadeDeVidas--;
+        this.estamina = 0;
+
+        if (this.quantidadeDeVidas < 0) {
+            this.quantidadeDeVidas = 0;
+        }
+        if (this.quantidadeDeVidas >= 0) {
+            this.estamina = 100;
+        }
+    }
+
+    public void coletarMoedas() {
+        this.quantidadeDeMoedas++;
+
+        if (this.quantidadeDeMoedas % 10 == 0) {
+            this.quantidadeDeVidas++;
+        }
     }
 
     void imprimirCaracteristicas() {
