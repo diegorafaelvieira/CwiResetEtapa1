@@ -10,13 +10,7 @@ public class ContaBanco {
     private boolean status;
 
     //Método Construtor
-    public ContaBanco(float saldo, boolean status) { // Somente com esse construtor dava erro
-        this.saldo = 0;
-        this.status = false;
-    }
-
-
-    public ContaBanco() { // Esse construtor eu mesmo criei devido ao erro e após funcionou
+    public ContaBanco() {
         this.saldo = 0;
         this.status = false;
     }
